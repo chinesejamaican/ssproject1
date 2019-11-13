@@ -4,7 +4,7 @@ use inventory;
 
 create user 'admin'@'localhost' identified by 'Pa11word';
 
-grant all privileges on HSL_Dog_Rescue.* to 'admin'@'localhost';
+grant all privileges on inventory.* to 'admin'@'localhost';
 
 
 CREATE TABLE  `vendors` (
