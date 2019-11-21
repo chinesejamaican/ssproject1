@@ -76,4 +76,12 @@ INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('2', 
 	       
 	       
 INSERT INTO `vendors`(`VendorID`, `Name`, `Contact`, `Phone`) VALUES (1010, 'Wire','John',9546595252)
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+INSERT INTO `computers`(`ComputerID`, `VendorID`, `Model`, `MemorySize`, `StoragesSize`) VALUES (1,1,'DELL2019','128GB','1TB')       
 
