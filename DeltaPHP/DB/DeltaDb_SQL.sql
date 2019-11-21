@@ -75,7 +75,14 @@ INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('2', 
 	       
 	       
 	       
-INSERT INTO `vendors`(`VendorID`, `Name`, `Contact`, `Phone`) VALUES (1010, 'Wire','John',9546595252)
+INSERT INTO `vendors` (`VendorID`, `Name`, `Contact`, `Phone`) VALUES
+(1, 'Wire', 'John', 2147483647),
+(2, 'Bluecore', 'Mark', 2147483647),
+(3, 'Net', 'Maria', 2147483647),
+(1010, 'Wire', 'John', 2147483647),
+(1011, 'Bluecore', 'Mark', 2147483647),
+(1012, 'Net', 'Maria', 2147483647);
+
 	       
 	       
 	       
