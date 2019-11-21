@@ -92,5 +92,10 @@ INSERT INTO `vendors` (`VendorID`, `Name`, `Contact`, `Phone`) VALUES
 	       
 	       
 	       
-INSERT INTO `computers`(`ComputerID`, `VendorID`, `Model`, `MemorySize`, `StoragesSize`) VALUES (1,1,'DELL2019','128GB','1TB')       
+INSERT INTO `computers` (`ComputerID`, `VendorID`, `Model`, `MemorySize`, `StoragesSize`) VALUES
+(1, 1, 'DELL2019', '128GB', '1TB'),
+(2, 2, 'HPLITE', '256GB', '1TB'),
+(3, 3, 'Lenovo', '256GB', '2TB'),
+(4, 1010, 'Apple', '128GB', '500GB'),
+(5, 1011, 'IBM', '256GB', '2TB');  
 
