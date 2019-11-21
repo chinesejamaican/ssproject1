@@ -70,8 +70,10 @@ CREATE TABLE `inventory`.`roomcomputers` (
 	
 	
 	
-INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('1', 'Safety');
-INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('2', 'Administator');
+INSERT INTO `buildings` (`BuildingID`, `BuildingNo`, `BuildingName`) VALUES
+(1, '3', 'HR'),
+(2, '1', 'Safety'),
+(3, '2', 'Administator');
 	       
 	       
 	       
