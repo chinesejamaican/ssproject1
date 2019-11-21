@@ -58,26 +58,15 @@ CREATE TABLE `inventory`.`roomcomputers` (
   `BuildingID` INT NULL,
   `ComputerID` INT NULL,
   `Count` INT NULL,
-  INDEX `RoomID_idx` (`RoomID` ASC) VISIBLE,
-  INDEX `BuildingID_idx` (`BuildingID` ASC) VISIBLE,
-  INDEX `ComputerID_idx` (`ComputerID` ASC) VISIBLE,
-  CONSTRAINT `RoomID`
-    FOREIGN KEY (`RoomID`)
-    REFERENCES `inventory`.`rooms` (`RoomID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `BuildingID`
-    FOREIGN KEY (`BuildingID`)
-    REFERENCES `inventory`.`buildings` (`BuildingID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `ComputerID`
-    FOREIGN KEY (`ComputerID`)
-    REFERENCES `inventory`.`computers` (`ComputerID`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE);
-
-    ON UPDATE CASCADE);
+  FOREIGN KEY (RoomID) REFERENCES rooms(RoomID) 
+  ON DELETE CASCADE 
+  ON UPDATE CASCADE,
+  FOREIGN KEY (BuildingID) REFERENCES buildings(BuildingID) 
+  ON DELETE CASCADE 
+  ON UPDATE CASCADE,
+  FOREIGN KEY (ComputerID) REFERENCES computers(ComputerID) 
+  ON DELETE CASCADE 
+  ON UPDATE CASCADE);
 	
 	
 	
