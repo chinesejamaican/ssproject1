@@ -2,6 +2,22 @@
 //including the database connection file
 include_once("config.php");
 
+
+/* 
+
+READ
+READ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+use the table name from the Tables.html page to query the database. Now this page is flexiable becuase it can bring up any table
+passed to it using GIT
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    // Read the selected Category from the database
+    $tableName= $_GET['tableName'];
+    $result = $dbConn->query("SELECT * FROM $tableName ORDER BY Title");
+    
+    */
+            
+
 //fetching data in descending order (lastest entry first)
 $result = $dbConn->query("SELECT * FROM vendors ORDER BY VendorID ASC");
 ?>
