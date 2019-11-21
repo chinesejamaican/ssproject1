@@ -14,15 +14,11 @@ CREATE TABLE  `vendors` (
   `Phone` INT NULL,
   PRIMARY KEY (`VendorID`));
 
-
 CREATE TABLE `buildings` (
   `BuildingID` INT NOT NULL AUTO_INCREMENT ,
   `BuildingNo` VARCHAR(15) NULL,
   `BuildingName` VARCHAR(15) NULL,
   PRIMARY KEY (`BuildingID`));
-
-
-
 
 CREATE TABLE  `rooms` (
   `RoomID` INT NOT NULL AUTO_INCREMENT,
@@ -67,15 +63,13 @@ CREATE TABLE `inventory`.`roomcomputers` (
   FOREIGN KEY (ComputerID) REFERENCES computers(ComputerID) 
   ON DELETE CASCADE 
   ON UPDATE CASCADE);
-	
-	
+		
 	
 INSERT INTO `buildings` (`BuildingID`, `BuildingNo`, `BuildingName`) VALUES
 (1, '3', 'HR'),
 (2, '1', 'Safety'),
 (3, '2', 'Administator');
-	       
-	       
+	       	       
 	       
 INSERT INTO `vendors` (`VendorID`, `Name`, `Contact`, `Phone`) VALUES
 (1, 'Wire', 'John', 2147483647),
@@ -84,14 +78,8 @@ INSERT INTO `vendors` (`VendorID`, `Name`, `Contact`, `Phone`) VALUES
 (1010, 'Wire', 'John', 2147483647),
 (1011, 'Bluecore', 'Mark', 2147483647),
 (1012, 'Net', 'Maria', 2147483647);
-
-	       
-	       
-	       
-	       
-	       
-	       
-	       
+       
+  
 INSERT INTO `computers` (`ComputerID`, `VendorID`, `Model`, `MemorySize`, `StoragesSize`) VALUES
 (1, 1, 'DELL2019', '128GB', '1TB'),
 (2, 2, 'HPLITE', '256GB', '1TB'),
