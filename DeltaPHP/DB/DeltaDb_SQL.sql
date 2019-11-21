@@ -70,6 +70,10 @@ CREATE TABLE `inventory`.`roomcomputers` (
 	
 	
 	
-	INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('1', 'Safety');
+INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('1', 'Safety');
 INSERT INTO `inventory`.`buildings` (`BuildingNo`, `BuildingName`) VALUES ('2', 'Administator');
+	       
+	       
+	       
+INSERT INTO `vendors`(`VendorID`, `Name`, `Contact`, `Phone`) VALUES (1010, 'Wire','John',9546595252)
 
