@@ -47,11 +47,11 @@
 							class="nc-icon nc-circle-09"></i>
 							<p>Computer</p>
 					</a></li>
-					<li class="nav-item active"><a class="nav-link" href="">
+					<li><a class="nav-link" href="../vendor/index.php">
 							<i class="nc-icon nc-notes"></i>
 							<p>Vendor</p>
 					</a></li>
-					<li><a class="nav-link" href="."> <i
+					<li><a class="nav-link" href="../rooms/index.php"> <i
 							class="nc-icon nc-paper-2"></i>
 							<p>Room</p>
 					</a></li>
