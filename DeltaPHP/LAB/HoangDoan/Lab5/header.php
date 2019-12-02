@@ -59,14 +59,9 @@ li a:hover {
 					<li><a href="starttime/index.php">Start Time</a></li>
 					<li><a href="dateweek/index.php">Date of Week</a>
 					</li>
-					<li><a href="price/index.php">Price</a></li>
-					<li><a href="screen/index.php">Screen</a>
+					<li><a href="/price/index.php">Price</a></li>
+					<li><a href="/screen/index.php">Screen</a>
 					</li>
 				</ul>
 			</nav>
 		</aside>
-		
-		<a href="create_table.php">Install DB</a>
-
-</body>
-</html>
