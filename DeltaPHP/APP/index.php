@@ -28,38 +28,32 @@
 <body>
 	<div class="wrapper">
 		<div class="sidebar" data-image="assets/img/sidebar-5.jpg">
-			<!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
 			<div class="sidebar-wrapper">
 				<div class="logo">
 					<a href="http://www.creative-tim.com" class="simple-text">
 						D-E-L-T-A </a>
 				</div>
 				<ul class="nav">
-					<li><a class="nav-link" href=""> <i
-							class="nc-icon nc-chart-pie-35"></i>
+					<li><a class="nav-link" href=""> <i class="nc-icon nc-chart-pie-35"></i>
 							<p>Home</p>
 					</a></li>
-					<li><a class="nav-link" href=""> <i
+					<li><a class="nav-link" href="computers/index.php"> <i
 							class="nc-icon nc-circle-09"></i>
 							<p>Computer</p>
 					</a></li>
-					<li class="nav-item active"><a class="nav-link" href="vendor/index.php">
-							<i class="nc-icon nc-notes"></i>
+					<li class="nav-item active"><a class="nav-link"
+						href="vendor/index.php"> <i class="nc-icon nc-notes"></i>
 							<p>Vendor</p>
 					</a></li>
-					<li><a class="nav-link" href="."> <i
+					<li><a class="nav-link" href="rooms/index.php"> <i
 							class="nc-icon nc-paper-2"></i>
 							<p>Room</p>
 					</a></li>
-					<li><a class="nav-link" href=""> <i
+					<li><a class="nav-link" href="roomcomputer/index.php"> <i
 							class="nc-icon nc-atom"></i>
 							<p>Room Computer</p>
 					</a></li>
-					<li><a class="nav-link" href=""> <i
+					<li><a class="nav-link" href="buildings/index.php"> <i
 							class="nc-icon nc-pin-3"></i>
 							<p>Building</p>
 					</a></li>
@@ -128,7 +122,7 @@
 				</div>
 			</nav>
 			<!-- End Navbar -->
-			
+
 			<footer class="footer">
 				<div class="container-fluid">
 					<nav>
@@ -152,8 +146,7 @@
 	</div>
 </body>
 <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.3.2.1.min.js"
-	type="text/javascript"></script>
+<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
@@ -172,32 +165,31 @@
 <script src="assets/js/demo.js"></script>
 </html>
 
-			<footer class="footer">
-				<div class="container-fluid">
-					<nav>
-						<ul class="footer-menu">
-							<li><a href="#"> Home </a></li>
-							<li><a href="#"> Company </a></li>
-							<li><a href="#"> Portfolio </a></li>
-							<li><a href="#"> Blog </a></li>
-						</ul>
-						<p class="copyright text-center">
-							©
-							<script>
+<footer class="footer">
+	<div class="container-fluid">
+		<nav>
+			<ul class="footer-menu">
+				<li><a href="#"> Home </a></li>
+				<li><a href="#"> Company </a></li>
+				<li><a href="#"> Portfolio </a></li>
+				<li><a href="#"> Blog </a></li>
+			</ul>
+			<p class="copyright text-center">
+				©
+				<script>
 								document.write(new Date().getFullYear())
 							</script>
-							<a href="">Delta Team</a>
-						</p>
-					</nav>
-				</div>
-			</footer>
-		</div>
+				<a href="">Delta Team</a>
+			</p>
+		</nav>
 	</div>
+</footer>
+</div>
+</div>
 </body>
 
 <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.3.2.1.min.js"
-	type="text/javascript"></script>
+<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->

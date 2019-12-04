@@ -5,11 +5,11 @@ if(isset($_POST['update']))
 {	
     $RoomID = $_POST['RoomID'];
     $BuildingID = $_POST['BuildingID'];
-    $RoomNumber = $_POST['RoomNumber'];
-    $Capacity = $_POST['Capacity'];
+    $ComputerID = $_POST['ComputerID'];
+    $Count = $_POST['Count'];
 	
 	
-    if(empty($RoomID) || empty($BuildingID) || empty($RoomNumber) || empty($Capacity)) {	
+    if(empty($RoomID) || empty($BuildingID) || empty($ComputerID) || empty($Count)) {	
 			
         if(empty($RoomID)) {
 			echo "<font color='red'>Room ID field is empty.</font><br/>";
@@ -19,37 +19,37 @@ if(isset($_POST['update']))
 			echo "<font color='red'>Building ID field is empty.</font><br/>";
 		}
 		
-		if(empty($RoomNumber)) {
-			echo "<font color='red'>RoomNumber field is empty.</font><br/>";
+		if(empty($ComputerID)) {
+			echo "<font color='red'>ComputerID field is empty.</font><br/>";
 		}
 		
-		if(empty($Capacity)) {
-		    echo "<font color='red'>Capacity field is empty.</font><br/>";
+		if(empty($Count)) {
+		    echo "<font color='red'>Count field is empty.</font><br/>";
 		}
 	} else {	
 		
-	    $sql = "UPDATE rooms SET RoomID='$RoomID', BuildingID='$BuildingID', RoomNumber='$RoomNumber', Capacity='$Capacity' WHERE RoomID='$RoomID'";
+	    $sql = "UPDATE roomcomputers SET RoomID='$RoomID', BuildingID='$BuildingID', ComputerID='$ComputerID', Count='$Count' WHERE RoomID='$RoomID'";
 		$query = $dbConn->prepare($sql);				
 		$query->execute();
 		
 		
 		header("Location: index.php");
-	}
+	}	
 }
 ?>
 <?php
 
 $RoomID = $_GET['RoomID'];
 
-$sql = "SELECT * FROM rooms WHERE RoomID=:RoomID";
+$sql = "SELECT * FROM roomcomputers WHERE RoomID=:RoomID";
 $query = $dbConn->prepare($sql);
 $query->execute(array(':RoomID' => $RoomID));
 while($row = $query->fetch(PDO::FETCH_ASSOC))
 {
     $RoomID = $row['RoomID'];
     $BuildingID = $row['BuildingID'];
-    $RoomNumber = $row['RoomNumber'];
-    $Capacity = $row['Capacity'];
+    $ComputerID = $row['ComputerID'];
+    $Count = $row['Count'];
     
 }
 ?>
@@ -69,7 +69,7 @@ include '../header.php'; // Contains HTML for header
 				<div class="row">
 					<div class="col-md-5 pr-1">
 						<div class="form-group">
-							<label>ID (disabled)</label> <input type="text" 
+							<label>RoomID (disabled)</label> <input type="text" 
 								class="form-control" disabled="" placeholder="RoomID"
 								value="<?php echo $_GET['RoomID'];?>">
 						</div>
@@ -84,14 +84,14 @@ include '../header.php'; // Contains HTML for header
 				<div class="row">
 					<div class="col-md-6 pr-1">
 						<div class="form-group">
-							<label>RoomNumber</label> <input type="text" class="form-control" name="RoomNumber"
-								placeholder="RoomNumber" value="<?php echo $RoomNumber;?>">
+							<label>ComputerID</label> <input type="text" class="form-control" name="ComputerID"
+								placeholder="ComputerID" value="<?php echo $ComputerID;?>">
 						</div>
 					</div>
 					<div class="col-md-6 pl-1">
 						<div class="form-group">
-							<label>Capacity</label> <input type="text" class="form-control" name="Capacity"
-								placeholder="Capacity" value="<?php echo $Capacity;?>">
+							<label>Count</label> <input type="text" class="form-control" name="Count"
+								placeholder="Count" value="<?php echo $Count;?>">
 						</div>
 					</div>
 				</div>
