@@ -42,23 +42,23 @@
 					<li><a class="nav-link" href=""> <i class="nc-icon nc-chart-pie-35"></i>
 							<p>Home</p>
 					</a></li>
-					<li><a class="nav-link" href="computers/index.php"> <i
+					<li><a class="nav-link" href="../computers/index.php"> <i
 							class="nc-icon nc-circle-09"></i>
 							<p>Computer</p>
 					</a></li>
 					<li class="nav-item active"><a class="nav-link"
-						href="vendor/index.php"> <i class="nc-icon nc-notes"></i>
+						href="../vendor/index.php"> <i class="nc-icon nc-notes"></i>
 							<p>Vendor</p>
 					</a></li>
-					<li><a class="nav-link" href="rooms/index.php"> <i
+					<li><a class="nav-link" href="../rooms/index.php"> <i
 							class="nc-icon nc-paper-2"></i>
 							<p>Room</p>
 					</a></li>
-					<li><a class="nav-link" href="roomcomputer/index.php"> <i
+					<li><a class="nav-link" href="../roomcomputer/index.php"> <i
 							class="nc-icon nc-atom"></i>
 							<p>Room Computer</p>
 					</a></li>
-					<li><a class="nav-link" href="buildings/index.php"> <i
+					<li><a class="nav-link" href="../buildings/index.php"> <i
 							class="nc-icon nc-pin-3"></i>
 							<p>Building</p>
 					</a></li>
