@@ -60,7 +60,7 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
 ?>
 
 <?php
-include 'header.php'; // Contains HTML for header
+include '../header.php'; // Contains HTML for header
 ?>
 <!-- begin table -->
 
@@ -115,5 +115,5 @@ include 'header.php'; // Contains HTML for header
 <!-- end table -->
 <a href="index.php">Back</a>
 <?php
-include 'footer.php'; // Contains HTML for header
+include '../footer.php'; // Contains HTML for header
 ?>
