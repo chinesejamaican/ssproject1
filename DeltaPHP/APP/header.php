@@ -46,7 +46,7 @@
 							class="nc-icon nc-circle-09"></i>
 							<p>Computer</p>
 					</a></li>
-					<li class="nav-item active"><a class="nav-link"
+					<li><a class="nav-link"
 						href="../vendor/index.php"> <i class="nc-icon nc-notes"></i>
 							<p>Vendor</p>
 					</a></li>
