@@ -46,8 +46,13 @@ if (isset($_POST['Submit'])) {
         // $query->execute(array(':name' => $name, ':email' => $email, ':age' => $age));
 
         // display success message
-        echo "<font color='green'>Data added successfully.";
-        echo "<br/><a href='index.php'>View Result</a>";
+        echo '<div class="alert alert-success">
+        <button type="button" aria-hidden="true" class="close" data-dismiss="alert">
+        <i class="nc-icon nc-simple-remove"></i>
+        </button>
+        <span>
+         Data added successfully.</span>
+        </div>'. "<a href='index.php'>View Result";
     }
 }
 ?>
