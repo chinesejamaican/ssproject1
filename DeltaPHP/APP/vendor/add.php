@@ -62,9 +62,6 @@ include '../header.php'; // Contains HTML for header
 ?>
 
 <body>
-	
-
-
 	<!-- begin table -->
 
 	<div class="col-md-8">
