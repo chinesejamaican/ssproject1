@@ -30,6 +30,8 @@ include '../header.php'; // Contains HTML for header
 									
 											<?php
 											
+											$btbClass = 'class = "btn btn-info btn-fill"';
+											
 											if ($result->fetchColumn() > 0) {
 											    $sql = "SELECT * FROM vendors ORDER BY VendorID ASC";
 											    foreach ($dbConn->query($sql) as $row){
@@ -38,7 +40,9 @@ include '../header.php'; // Contains HTML for header
 											        echo "<td>" . $row['Name'] . "</td>";
 											        echo "<td>" . $row['Phone'] . "</td>";
 											        echo "<td>" . $row['Contact'] . "</td>";
-											        echo "<td><a href=\"edit.php?vendorID=$row[VendorID]\">Edit</a> | <a href=\"delete.php?vendorID=$row[VendorID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+											        echo "<td><a $btbClass href=\"edit.php?vendorID=$row[VendorID]\">Edit</a>
+                                                        </td>";
+											        echo "<td><a $btbClass href=\"delete.php?vendorID=$row[VendorID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
 											    }
 											}
 											else{

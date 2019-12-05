@@ -62,7 +62,7 @@ include '../header.php'; // Contains HTML for header
 ?>
 
 <body>
-	<a href="index.php">Home</a>
+	
 
 
 	<!-- begin table -->
@@ -70,6 +70,7 @@ include '../header.php'; // Contains HTML for header
 	<div class="col-md-8">
 		<div class="card">
 			<div class="card-header">
+				<a href="index.php">Back</a>
 				<h4 class="card-title">Add a vendor</h4>
 			</div>
 			<div class="card-body">
