@@ -53,7 +53,7 @@ if (isset($_POST['Submit'])) {
 ?>
 
 <?php
-include 'header.php'; // Contains HTML for header
+include '../header.php'; // Contains HTML for header
 ?>
 
 <body>
@@ -107,5 +107,5 @@ include 'header.php'; // Contains HTML for header
 	<!-- end table -->
 
 <?php
-include 'footer.php'; // Contains HTML for header
+include '../footer.php'; // Contains HTML for header
 ?>
